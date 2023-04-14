@@ -1,0 +1,13 @@
+int anahtarPin = 9; // Anahtarın bağlı olduğu pin
+
+void setup() {
+  pinMode(anahtarPin, OUTPUT); // Anahtar pinini çıkış olarak ayarla
+}
+
+void loop() {
+  digitalWrite(anahtarPin, HIGH); // Anahtarı açmak için pin yüksek seviyeye ayarlanır
+  delay(10000);// Anahtarı belirtilen süre boyunca açık tut
+  digitalWrite(anahtarPin, LOW); // Anahtarı kapatmak için pin düşük seviyeye ayarlanır
+  delay(3000); // Bir sonraki döngüye geçmeden önce belirtilen süre boyunca bekle
+}
+// görsele bakın kurulumda
